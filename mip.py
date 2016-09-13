@@ -97,10 +97,6 @@ class MultiPropInequality(object):
         """
         inequalities = self._get_inequalities(f_node)
         return None if len(inequalities) == 0 else inequalities[0]
-        # if len(inequalities) == 0:
-        #     return None
-        # else:
-        #     return inequalities[0]
 
 
     def _get_inequalities(self, f_node):
@@ -136,10 +132,6 @@ class MultiPropInequality(object):
             elif self.first_inequality['name'] != inq['name']:
                 push_to_post = True
                 break
-            # else:
-            #     self.first_inequality['name'] != inq['name']
-            #     push_to_post = True
-            #     break
 
         if push_to_post:
             self.post_inq_filters.append(filter_node)
