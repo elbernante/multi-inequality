@@ -3,7 +3,7 @@ class MultiPropInequality(object):
 
     NOTE: GQL is not supported.
 
-    The original resulst set returned by the underlying query will be filtered
+    The original result set returned by the underlying query will be filtered
     using post filters. Only those results that satisfy all of the post filters
     will be handed back.
 
@@ -104,7 +104,7 @@ class MultiPropInequality(object):
 
 
     def _get_inequalities(self, f_node):
-        """Returns a list of inequalities in a given node and all of it's
+        """Returns a list of inequalities in a given node and all of its
         subnodes
         """
         inequalities = []
